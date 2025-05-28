@@ -58,34 +58,40 @@
                             <li>
                                 <label for="first-name">first name</label>
                                 <input type="text" id="first-name" required
-                                autocomplete="name" pattern="[a-zA-Z]{2,}">
+                                    autocomplete="name" pattern="[a-zA-Z]{2,}">
+                                <span class="input-valid-status"></span>
                             </li>
                             <li>
                                 <label for="last-name">last name</label>
                                 <input type="text" id="last-name" required
-                                pattern="[a-zA-Z]{3,}">
+                                    pattern="[a-zA-Z]{3,}">
+                                <span class="input-valid-status"></span>
                             </li>
                             <li>
                                 <label for="email">email</label>
                                 <input type="email" id="email" required
-                                autocomplete="email">
+                                    autocomplete="email">
+                                <span class="input-valid-status"></span>
                             </li>
                             <li>
                                 <label for="phone">phone number</label>
-                                <input type="tel" id="phone" autocomplete="tel"
-                                pattern="[0-9]{10,11}">
+                                <input type="tel" id="phone" placeholder=""
+                                    autocomplete="tel" pattern="[0-9]{10,11}">
+                                <span class="input-valid-status"></span>
                             </li>
                             <li>
                                 <label for="password">password</label>
                                 <input type="password" id="password"
-                                minlength="6" maxlength="80" required
-                                pattern="^(?=.*\d).+$">
+                                    minlength="6" maxlength="80" required
+                                    pattern="^(?=.*\d).+$">
+                                <span class="input-valid-status"></span>
                             </li>
                             <li>
                                 <label for="password-confirm">confirm password</label>
                                 <input type="password" id="password-confirm"
-                                minlength="6" maxlength="80" required
-                                pattern="^(?=.*\d).+$">
+                                    minlength="6" maxlength="80" required
+                                    pattern="^(?=.*\d).+$">
+                                <span class="input-valid-status"></span>
                             </li>
                         </ul>
                     </div>

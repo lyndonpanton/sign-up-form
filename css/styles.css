@@ -157,12 +157,12 @@ ul {
 }
 
 input, button, label {
-    appearance: none;
-
     display: block;
 }
 
 li {
+    position: relative;
+
     width: 40%;
 }
 
@@ -178,11 +178,44 @@ label {
 }
 
 input {
-    border: 1px solid #DFDFDF;
+    appearance: none;
+    
+    /* border: 1px solid #DFDFDF; */
+    border: 2px solid black;
     border-radius: 4px;
     padding: 4px 8px;
 
     background-color: #FEFEFE;
+}
+
+input:optional {
+    border-style: dashed;
+}
+
+input[type="password"]:required:valid {
+    border-color: limegreen;
+}
+
+input[type="password"]:required:invalid {
+    border-color: red;
+}
+
+input:required + span::after, input:optional + span::after {
+    position: absolute;
+    top: 30px;
+    right: -8px;
+}
+
+input:optional:placeholder-shown + span::after {
+    content: "" !important;
+}
+
+input:required:invalid + span::after, input:optional:invalid + span::after {
+    content: "❌";
+}
+
+input:required:valid + span::after, input:optional:valid + span::after {
+    content: "✅";
 }
 
 #sign-up-suggestion {
