@@ -10,6 +10,19 @@
     font-weight: normal;
 }
 
+:root {
+    --button-background-active: #A1693C;
+    --button-border-focus: darkblue;
+    --button-background-hover: #BE8250;
+    --link-default: #D49561;
+    --logo-background: #3C3C3C80;
+    --border-color-invalid: red;
+    --border-color-valid: limegreen;
+    --box-shadow-a: #BFBFBF;
+    --box-shadow-b: #DFDFDF;
+    --box-shadow-c: #FFFFFF;
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -48,7 +61,7 @@ main {
     padding: 15px;
     width: 100%;
 
-    background-color: rgb(60, 60, 60, 0.5);
+    background-color: var(--logo-background);
 }
 
 #logo-heading {
@@ -89,6 +102,14 @@ main {
     font-weight: 300;
 }
 
+.credit-link, .credit-link {
+    text-decoration-style: dotted;
+}
+
+.credit-link:focus, .credit-link:hover {
+    text-decoration: underline;
+}
+
 /* Text ***********************************************************************/
 #sign-up {
     width: 60%;
@@ -125,9 +146,9 @@ em {
 
     box-shadow:
         0px -2px 2px #F5F5F5,
-        4px 2px 2px #BFBFBF,
-        4px 6px 2px #DFDFDF,
-        4px 10px 2px #FFFFFF;
+        4px 2px 2px var(--box-shadow-a),
+        4px 6px 2px var(--box-shadow-b),
+        4px 10px 2px var(--box-shadow-c);
     background-color: white;
 }
 
@@ -192,9 +213,9 @@ input {
 input:focus {
     outline: none;
     box-shadow:
-        4px 2px 2px #BFBFBF,
-        4px 6px 2px #DFDFDF,
-        4px 10px 2px #FFFFFF;
+        4px 2px 2px var(--box-shadow-a),
+        4px 6px 2px var(--box-shadow-b),
+        4px 10px 2px var(--box-shadow-c);
     border: 2px solid #4682B4;
 }
 
@@ -203,11 +224,11 @@ input:optional {
 }
 
 input[type="password"]:required:valid {
-    border-color: limegreen;
+    border-color: var(--border-color-valid);
 }
 
 input[type="password"]:required:invalid {
-    border-color: red;
+    border-color: var(--border-color-invalid);
 }
 
 input:required + span::after, input:optional + span::after {
@@ -238,7 +259,7 @@ input:required:valid + span::after, input:optional:valid + span::after {
     border-radius: 6px;
     padding: 8px 48px;
 
-    background-color: #D49561;
+    background-color: var(--link-default);
     box-shadow: 2px 2px 6px #AAAAAA;
 
     color: white;
@@ -247,15 +268,15 @@ input:required:valid + span::after, input:optional:valid + span::after {
 
 #sign-up-create:focus {
     outline: none;
-    border: 2px solid darkblue;
+    border: 2px solid var(--button-border-focus);
 }
 
 #sign-up-create:hover {
-    background-color:#be8250;
+    background-color: var(--button-background-hover);
 }
 
 #sign-up-create:active {
-    background-color:#a1693c;
+    background-color: var(--button-background-active);
 }
 
 #sign-up-login {
@@ -263,7 +284,7 @@ input:required:valid + span::after, input:optional:valid + span::after {
 }
 
 #sign-up-login-link {
-    color: #D49561;
+    color: var(--link-default);
     font-weight: 700;
     text-decoration: none;
 }
@@ -273,5 +294,5 @@ input:required:valid + span::after, input:optional:valid + span::after {
 }
 
 #sign-up-login-link:active {
-    color:#a1693c;
+    color: var(--button-background-active);
 }
