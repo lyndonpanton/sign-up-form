@@ -25,5 +25,8 @@ A form for signing up for an account on a website.
 ## Credits
 
 - [Lyndon Mykal Panton (Developer)](https://github.com/lyndonpanton)
+- [Banner background image](https://unsplash.com/photos/brown-giraffe-on-brown-grass-field-during-daytime-2n3tcXLZjxg)
+- [Banner logo image](https://www.freepik.com/free-vector/illustration-plant_2583321.htm)
+- [Banner logo font](https://fontlibrary.org/en/font/anarchist-mustache)
 
 ## References
