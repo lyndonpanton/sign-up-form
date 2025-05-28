@@ -67,7 +67,25 @@ main {
 }
 
 #logo-credit {
-    
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+
+    background-color: rgba(60, 60, 60, 0.5);
+
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.credit-text {
+    margin: 10px;
+}
+
+.credit-text, .credit-link {
+    color: white;
+    font-weight: 300;
 }
 
 /* Text ***********************************************************************/
