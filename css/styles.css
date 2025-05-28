@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+
+    font-size: 16px;
+    /* font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial,
+                    sans-serif; */
+    font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial,
+                    sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Banner *********************************************************************/
+#logo {
+    background-image: url(../img/logo-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#logo-heading {
+    /* font-family: "Avarabold", sans-serif; */
+    font-family: "AnarchistMustacheRegular", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* Text ***********************************************************************/
