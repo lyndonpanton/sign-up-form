@@ -92,7 +92,7 @@ main {
 #sign-up {
     width: 60%;
     height: 100%;
-    padding-top: 140px;
+    padding-top: 100px;
     padding-bottom: 140px;
 
     background-color: #FAFAFA;
@@ -183,4 +183,52 @@ input {
     padding: 4px 8px;
 
     background-color: #FEFEFE;
+}
+
+#sign-up-suggestion {
+    padding-top: 40px;
+}
+
+#sign-up-create {
+    margin: 0 0 32px 0;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    padding: 8px 48px;
+
+    background-color: #D49561;
+    box-shadow: 2px 2px 6px #AAAAAA;
+
+    color: white;
+    font-size: 1.2rem;
+}
+
+#sign-up-create:focus {
+    outline: none;
+    border: 2px solid darkblue;
+}
+
+#sign-up-create:hover {
+    background-color:#be8250;
+}
+
+#sign-up-create:active {
+    background-color:#a1693c;
+}
+
+#sign-up-login {
+    font-weight: 500;
+}
+
+#sign-up-login-link {
+    color: #D49561;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#sign-up-login-link:focus, #sign-up-login-link:hover {
+    text-decoration: underline;
+}
+
+#sign-up-login-link:active {
+    color:#a1693c;
 }
