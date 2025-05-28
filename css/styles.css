@@ -15,18 +15,63 @@ body, html {
     padding: 0;
 }
 
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 100%;
+    height: 100vh;
+}
+
 /* Banner *********************************************************************/
-#logo {
+#banner {
+    position: relative;
+
+    width: 35%;
+    height: 100%;
+
     background-image: url(../img/logo-background.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    margin-top: 25vh;
+    padding: 15px;
+    width: 100%;
+
+    background-color: rgb(60, 60, 60, 0.5);
+}
+
 #logo-heading {
-    /* font-family: "Avarabold", sans-serif; */
+    margin: 0;
+    padding: 0;
+
+    color: white;
     font-family: "AnarchistMustacheRegular", sans-serif;
+    font-size: 4rem;
     font-style: normal;
     font-weight: bold;
 }
 
+#logo-image {
+    width: 80px;
+    height: auto;
+}
+
+#logo-credit {
+    
+}
+
 /* Text ***********************************************************************/
+#text {
+    width: 65%;
+    height: 100%;
+}
