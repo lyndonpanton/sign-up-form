@@ -120,6 +120,7 @@ em {
 #sign-up-form {
     padding-top: 25px;
     padding-bottom: 35px;
+    padding-right: 300px;
 
     box-shadow:
         0px -2px 2px #F5F5F5,
@@ -144,10 +145,42 @@ em {
 }
 
 ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* gap: 48px; */
+    column-gap: 48px;
+    row-gap: 24px;
+
     padding: 0;
     list-style-type: none;
 }
 
-input, button {
+input, button, label {
     appearance: none;
+
+    display: block;
+}
+
+li {
+    width: 40%;
+}
+
+label, input {
+    width: 250px;
+}
+
+label {
+    margin-bottom: 5px;
+    /* font-size: 0.8em; */
+    font-weight: 600;
+    font-variant: small-caps;
+}
+
+input {
+    border: 1px solid #DFDFDF;
+    border-radius: 4px;
+    padding: 4px 8px;
+
+    background-color: #FEFEFE;
 }
