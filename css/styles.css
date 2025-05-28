@@ -32,6 +32,7 @@ main {
     height: 100%;
 
     background-image: url(../img/logo-background.jpg);
+    background-image: url(../img/logo-background.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -52,7 +53,7 @@ main {
 
 #logo-heading {
     margin: 0;
-    padding: 0;
+    padding-top: 10px;
 
     color: white;
     font-family: "AnarchistMustacheRegular", sans-serif;
